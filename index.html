@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fun Puppies API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Underdog' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" charset="utf-8"></script>
+    <script src="/scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Fun Puppies API</h1>
+      <img src="http://49.media.tumblr.com/tumblr_md12asbGTX1r5c792o5_250.gif" alt="puppy" />
+    </header>
+    <div class="content">
+      <h3>Adopt a puppy!</h3>
+      <form id="adopt-puppy">
+        <div class="row">
+          <div class="four columns">
+            <input class="u-full-width" type="text" name="name" value="" placeholder="name">
+          </div>
+          <div class="five columns">
+            <input class="u-full-width" type="text" name="url" value="" placeholder="silly picture URL">
+          </div>
+          <div class="three columns">
+            <button type="submit" class="button-primary" name="button">Adopt!</button>
+          </div>
+        </div>
+      </form>
+      <h3>These are our adopted puppies</h3>
+      <!-- this is the template for all the puppies -->
+      <div class="puppy-template">
+        Name: <span class="name"><!-- name goes here --></span><br>
+        Likes: <span class="likes"><!-- likes go here --></span><br>
+        <div class="puppy-picture">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div class="adopted-puppies">
+        <!-- puppies from the template go here -->
+      </div>
+    </div>
+  </body>
+</html>
